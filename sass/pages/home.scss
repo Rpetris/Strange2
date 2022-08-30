@@ -1,0 +1,108 @@
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  padding-left: 30px;
+
+  h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 2.7rem;
+    font-weight: 200;
+    transform: translateY(38px);
+  }
+
+  .movie-title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-title-pre {
+    transform: translateY(-35px);
+    font-size: 2rem;
+    margin-left: 18rem;
+    font-weight: 200;
+  }
+
+  .movie-title {
+    transform: translateY(-45px);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 59px;
+    color: $mom-color;
+    line-height: 15px;
+    padding-top: 23px;
+  }
+
+  .movie-description {
+    width: 600px;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 23px;
+  }
+
+  .trailer-button {
+    background-color: $mom-color;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    width: 300px;
+    height: 80px;
+    padding-left: 50px;
+    font-family: $font;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+  .trailer-button:hover {
+    height: 90px;
+    width: 310px;
+    transition: all 0.7s;
+  }
+}
+
+.social-media-container {
+  width: 48px;
+  ul {
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+  }
+  li {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li:hover {
+    background-color: $mom-color;
+    border-color: $mom-color;
+    transition: all 0.7s;
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}

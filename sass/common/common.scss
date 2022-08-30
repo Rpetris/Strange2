@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      #000000 0.52%,
+      rgba(0, 0, 0, 0.85) 43.56%,
+      rgba(0, 0, 0, 0) 74.54%
+    ),
+    url(/assets/background.png);
+  background-size: cover;
+  padding: 80px 200px 50px 128px;
+
+  animation: zoom 1.5s alternate;
+
+  a,
+  h1,
+  span,
+  p,
+  button {
+    color: $font-color;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: $mom-color;
+  width: 0px;
+  height: 0px;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

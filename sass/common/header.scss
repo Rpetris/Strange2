@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40rem;
+  margin-top: 30px;
+
+  .navigation-itens {
+    display: flex;
+    gap: 34px;
+    margin-left: 125px;
+  }
+
+  .nav-itens-item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 6px;
+    cursor: pointer;
+  }
+  .nav-itens-item:hover {
+    background-color: $link-hover-color;
+    transition: all 0.7s;
+  }
+}
